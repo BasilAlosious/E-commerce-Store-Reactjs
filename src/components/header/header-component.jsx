@@ -15,7 +15,6 @@ const Header= () =>(
         <Link className='options' to="/shop">
             CONTACT
         </Link>
-        
         </div>
    </div> 
 )
