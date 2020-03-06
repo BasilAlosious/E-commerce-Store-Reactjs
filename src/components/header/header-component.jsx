@@ -13,23 +13,23 @@ const Header= ({currentUser, hidden}) =>(
         <Logo className='logo'></Logo>
         </Link>
         <div className='options'>
-        <Link className='options' to="/shop">
+        <Link className='option' to="/shop">
           SHOP
         </Link>
-        <Link className='options' to="/shop">
+        <Link className='option' to="/shop">
             CONTACT
         </Link>
         { currentUser ? (
-            <div className='options' onClick={()=>auth.signOut()}>
+            <div className='option' onClick={()=>auth.signOut()}>
             SIGN OUT 
             </div>
           )
           : (
-            <Link className='options' to='/signin'>
+            <Link className='option' to='/signin'>
             SIGN IN
             </Link>
           ) }
-          <CartIcon className='options'/>
+          <CartIcon/>
         </div>
          { hidden ? null : <CartDropdown/>}
    </div> 
